@@ -1,7 +1,8 @@
 <div align="center">
 
 <!-- Banner — generated SVG -->
-<img src="docs/banner.svg" alt="SentryLens — Real-time PPE compliance AI" width="100%"/>
+<img src="<img width="1136" height="301" alt="image" src="https://github.com/user-attachments/assets/e5cb01fb-c788-474c-bb43-1a6159e5cbcc" />
+" alt="SentryLens — Real-time PPE compliance AI" width="100%"/>
 
 <br/>
 
