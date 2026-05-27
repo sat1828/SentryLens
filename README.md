@@ -1,8 +1,8 @@
 <div align="center">
 
 <!-- Banner — generated SVG -->
-<img src="<img width="1136" height="301" alt="image" src="https://github.com/user-attachments/assets/e5cb01fb-c788-474c-bb43-1a6159e5cbcc" />
-" alt="SentryLens — Real-time PPE compliance AI" width="100%"/>
+<img width="1136" height="301" alt="image" src="https://github.com/user-attachments/assets/3b9a4047-356a-47c3-9a53-170de628d526" />
+
 
 <br/>
 
@@ -36,7 +36,8 @@ That's the whole pitch. No cloud subscription. Runs entirely on your own server.
 ## Architecture
 
 <div align="center">
-<img src="docs/arch.svg" alt="SentryLens system architecture diagram" width="100%"/>
+<img width="1213" height="660" alt="image" src="https://github.com/user-attachments/assets/02d6dcb7-555f-4367-9d5c-53b41c5fbaf7" />
+
 </div>
 
 The system splits cleanly into four concerns:
@@ -54,7 +55,7 @@ The system splits cleanly into four concerns:
 ## Dashboard
 
 <div align="center">
-<img src="docs/dashboard_mockup.svg" alt="SentryLens dashboard UI mockup" width="100%"/>
+<img width="1105" height="658" alt="image" src="https://github.com/user-attachments/assets/ebddf295-c18f-4be3-9c8f-4fe6cd4eb415" />
 </div>
 
 The dashboard surfaces four things that actually matter on a site:
