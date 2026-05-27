@@ -1,0 +1,37 @@
+# SentryLens — PPE Detection Dataset Config
+# ──────────────────────────────────────────
+# Compatible with: Roboflow Construction Site Safety dataset
+# https://universe.roboflow.com/roboflow-universe-projects/construction-site-safety
+#
+# Class mapping (10 classes):
+#   0: Hardhat          (compliant)
+#   1: Mask             (compliant — not core SentryLens scope)
+#   2: NO-Hardhat       → missing_helmet violation
+#   3: NO-Mask          (not tracked)
+#   4: NO-Safety Vest   → missing_vest violation
+#   5: Person           (used for zone logic + crowd count)
+#   6: Safety Cone      (informational)
+#   7: Safety Vest      (compliant)
+#   8: Machinery        (informational)
+#   9: Vehicle          (used for near-miss detection)
+#
+# NOTE: "path" is overwritten by train.py after dataset download.
+# Do not set absolute paths here — they are machine-specific.
+
+path: ./dataset
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 10
+names:
+  0: Hardhat
+  1: Mask
+  2: NO-Hardhat
+  3: NO-Mask
+  4: NO-Safety Vest
+  5: Person
+  6: Safety Cone
+  7: Safety Vest
+  8: Machinery
+  9: Vehicle

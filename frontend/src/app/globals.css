@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { --sidebar-width: 240px; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { height: 100%; }
+}
+
+/* FIX: Define all custom classes used throughout the app.
+   Without these, .card .btn-primary .badge .input render as unstyled. */
+@layer components {
+  .card {
+    @apply bg-white border border-gray-100 rounded-xl shadow-sm;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium
+           bg-gray-900 text-white hover:bg-gray-800 active:bg-gray-950
+           transition-colors disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium
+           border border-gray-200 bg-white text-gray-700 hover:bg-gray-50
+           transition-colors disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-danger {
+    @apply inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium
+           bg-red-600 text-white hover:bg-red-700 transition-colors;
+  }
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .input {
+    @apply w-full border border-gray-200 rounded-lg px-3 py-2 text-sm
+           focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent
+           disabled:bg-gray-50 disabled:text-gray-400;
+  }
+  .label {
+    @apply block text-xs font-medium text-gray-700 mb-1.5;
+  }
+}
